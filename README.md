@@ -4,7 +4,7 @@ Basic.Space Marvel API Take Home Challenge
 # AI/ML Take Home Project
 
 > **Note**
->This is designed to be done with python.
+>This was designed as a React app that relies on a Python based endpoint. 
 
 ## Getting started
 
