@@ -10,6 +10,7 @@ Basic.Space Marvel API Take Home Challenge
 > In a seperate terminal, naviagte to the root level folder "ai-ml-basicSpace", and run "python app.py"
 > You should now be able to open a browser at the port url, in my case "http://localhost:3000/" to see the react ui rendering.
 > My flask endpoint was running on "http://localhost:5000/classify", which is currently hardcoded into the axios api call. You might need to change this to reflect the actual port its being served on!
+>   Some of the images being served from the Marvel API are "Not Available" on their end. Thus some character grid containers contain the error code "Image Not Found".
 
 ## Getting started
 
