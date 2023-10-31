@@ -10,7 +10,8 @@ function App() {
 
 
   useEffect(() => {
-    // Define Marvel API public and private keys
+    // Define Marvel API public and private keys 
+    // In a real prod env we would need to hide these keys behind encryption
     const publicKey = 'ed0d1ef9be26a5cd0799c4d22b473468';
     const privateKey = '4dd21eaa43edac6bd795410af035dc6bc697c770';
 
@@ -83,6 +84,7 @@ function App() {
           </div>
         ))}
       </div>
+      {/* Pagnination component at the bottom of each page */}
       <div className="pagination">
         <button onClick={() => setPage(prevPage => Math.max(prevPage - 1, 1))}>Previous Page</button>
         <span>Page {page}</span>

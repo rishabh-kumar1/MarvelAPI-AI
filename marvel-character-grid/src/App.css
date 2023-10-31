@@ -20,7 +20,7 @@
 }
 
 
- .overlay { /*Makes it easier to read our text on the bottom of each grid container */
+.overlay { /*Makes it easier to read our text on the bottom of each grid container */
   position: absolute;
   bottom: 0;
   left: 0;
@@ -32,4 +32,9 @@
   font-size: 25px;
   text-align: center;
   width: 100%; /* Make overlay fill entire width of container */
+}
+
+.pagination {
+  text-align: center;
+  margin: 20px 0; /* Adjust the margin as needed */
 }
