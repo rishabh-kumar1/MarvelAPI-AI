@@ -25,6 +25,29 @@ def sentiment_analysis(text):
 @app.route("/classify", methods=["POST"])
 def computeClassifications():
     data = request.json
+    for character in data:
+        entities = named_entity_recognition(character['description'])
+        sentiments = []
+
+
+        for entity in entities:
+            sentiment = sentiment_analysis(entity)
+            sentiments.append(sentiment)
+
+
+        # Count the occurrences of each sentiment
+        sentiment_counts = {
+            'Hero': sentiments.count('positive'),
+            'Villain': sentiments.count('negative'),
+            'Neutral': sentiments.count('neutral')
+        }
+
+
+        # Get the sentiment with the highest count
+        max_sentiment = max(sentiment_counts, key=sentiment_counts.get)
+        character['sentiment'] = max_sentiment
+
+
     return jsonify(data)
 
 if __name__ == "__main__":
