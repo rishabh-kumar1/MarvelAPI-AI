@@ -4,7 +4,7 @@ Basic.Space Marvel API Take Home Challenge
 # AI/ML Take Home Project
 
 > **Note**
->This was designed as a React app that relies on a Python based endpoint. To run this project out of the box, one needs to have two terminals open (two different ports).
+>This was designed as a React app that relies on a Flask based POST endpoint. To run this project out of the box, one needs to have two terminals open (two different ports).
 > Run "npm install" in the "marvel-character-grid" folder to install necessary react/jsx libraries.
 > You should then be able to run "npm start" to build and run the react app.
 > In a seperate terminal, naviagte to the root level folder "ai-ml-basicSpace", and run "python app.py"
