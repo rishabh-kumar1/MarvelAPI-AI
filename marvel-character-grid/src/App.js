@@ -17,13 +17,36 @@ function App() {
     // Create an MD5 hash of timestamp, private key, and public key
     const hash = md5(timestamp + privateKey + publicKey);
 
-
+    //calling marvel endpoint
+    axios
+    .get('http://gateway.marvel.com/v1/public/characters', {
+      params: {
+        ts: timestamp,
+        apikey: publicKey,
+        hash: hash
+      },
+    })
+    .then((response) => {
+      const characterData = response.data.data.results;
+    })
   });
 
 
+
+  //grid ui should look something like this
   return (
     <div className="App">
-      
+      <div className="grid-container">
+        {characters.map(character => (
+          <div className="grid-item" key={character.name}>
+            <img src={character.thumbnail} alt={character.name} />
+            <div className="overlay">
+              {character.name}
+              <div>{character.sentiment}</div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
