@@ -20,7 +20,7 @@
 }
 
 
-.overlay {
+ .overlay { /*Makes it easier to read our text on the bottom of each grid container */
   position: absolute;
   bottom: 0;
   left: 0;
