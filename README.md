@@ -4,7 +4,12 @@ Basic.Space Marvel API Take Home Challenge
 # AI/ML Take Home Project
 
 > **Note**
->This was designed as a React app that relies on a Python based endpoint. 
+>This was designed as a React app that relies on a Flask based POST endpoint. To run this project out of the box, one needs to have two terminals open (two different ports).
+> Run "npm install" in the "marvel-character-grid" folder to install necessary react/jsx libraries.
+> You should then be able to run "npm start" to build and run the react app.
+> In a seperate terminal, naviagte to the root level folder "ai-ml-basicSpace", and run "python app.py"
+> You should now be able to open a browser at the port url, in my case "http://localhost:3000/" to see the react ui rendering.
+> My flask endpoint was running on "http://localhost:5000/classify", which is currently hardcoded into the axios api call. You might need to change this to reflect the actual port its being served on!
 
 ## Getting started
 
