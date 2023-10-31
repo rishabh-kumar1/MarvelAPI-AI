@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import md5 from 'md5';
 import './App.css';
 
+
 function App() {
+ 
+  useEffect(() => {
+    // Define your Marvel API public and private keys
+    const publicKey = 'ed0d1ef9be26a5cd0799c4d22b473468';
+    const privateKey = '4dd21eaa43edac6bd795410af035dc6bc697c770';
+
+    // Generate a timestamp
+    const timestamp = new Date().getTime();
+
+    // Create an MD5 hash of timestamp, private key, and public key
+    const hash = md5(timestamp + privateKey + publicKey);
+
+
+  });
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
+
 
 export default App;
