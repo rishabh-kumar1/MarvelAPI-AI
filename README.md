@@ -29,35 +29,6 @@ that link directly.
 
 - Add the public and private key to your programming languages config file of choice in this project.
 
-## Assignment
-
-This assignment consists of 6 different steps, that are functionally related,and build upon each other.
-For this assignment you have to clone this repository,
-get the application running locally and then work on the code,
-as you would with any other Elixir/Phoenix application.
-
-### What is and isn't expected
-
-- We don't expect you to complete all the steps.
-The main goal of the assignment is to have some code we can talk about in our next call.
-We don't want to use more of your free time than absolutely necessary.
-The assignment is intended to take **up to 4 hours**, but not more.
-
-- You do not need to do the setps in the exact order they are listed.
-
-- The application should work out of the box.
-No show-stopper kind of programming errors have been intentionally added to it.
-However, we expect you to **fix any application/logic errors** that you come across.
-We would love to discuss them in our next call.
-
-- We expect you to do **local refactorings and small code improvements** as you see fit.
-
-- Last but not least we expect you to **use Git** during the assignment.
-Put your changes into appropriately sized commits,
-just as if you were working in a collaborative environment. We will review these commits and 
-changes as part of the pair review session.
-
-
 ## Goals
 1. Fetch the characters from the Marvel API. Hint: You will use the URL http://gateway.marvel.com/v1/public/characters?[authenticated_params]
 
@@ -71,8 +42,3 @@ changes as part of the pair review session.
 
 6. Let's add some test coverage. We want to mock the API calls, test the front-end results, unit test the API authentication code, etc.
 
-## Handing in the solution
-
-- Once you are done, ensure you committed and pushed all your changes, and then you can send your solution directly by email to [garrett@basic.space](mailto:garrett@basic.space?subject=Basic.Space%20AI%2FML%20Assignment), for example, as a zip archive. Please make sure the solution contains the entire project, including the `.git` directory, so we can have a look at your commits.
-
-- [Schedule a follow up review call](https://meetings.hubspot.com/garrett-tacoronte/technical-review-call) to go over your final implementation.
