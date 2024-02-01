@@ -1,7 +1,4 @@
-# Basic.SpaceChallenge
-Basic.Space Marvel API Take Home Challenge
-
-# AI/ML Take Home Project
+Marvel API Challenge
 
 > **Note**
 >This was designed as a React app that relies on a Flask based POST endpoint. To run this project out of the box, one needs to have two terminals open (two different ports).
